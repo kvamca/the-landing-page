@@ -25,15 +25,11 @@ body{
     height: fit-content;
 }
 
-.hero{
+.hero, .quote, .cta{
     display: flex;
     gap: 32px;
     max-width: 945px;
     margin-top: 32px;
-}
-
-/* all section settings */
-.hero{
     padding: 0px 48px 64px 48px;
 }
 
@@ -55,13 +51,85 @@ body{
     max-width: 400px;
 }
 
-.button-primary{
-    background-color: #FFFFFF;
-}
-
 .content{
     background-color: #010230;
     min-height: 500px;
+}
+
+.photos{
+    background-color: #010230;
+    padding: 32px 48px 64px 48px;
+    display: flex;
+    justify-content: center;
+}
+
+.photos-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.photos-grid{
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    margin-top: 24px;
+}
+
+.image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 180px;
+}
+
+.image img {
+    width: 180px;
+    display: flex;
+    border-radius: 12px;
+    border: 4px solid #5E3B64;
+  }
+
+.text-center{
+    text-align: center;
+}
+
+.quote{
+    flex-direction: column;
+}
+
+.quote-text{
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    max-width: 850px;
+}
+
+.quote-author{
+    font-size: 16px;
+    font-weight: 500;
+    align-self: flex-end;
+    margin-right: 16px;
+    margin-top: -64px;
+}
+
+.white-background{
+    background-color: #FFFFFF;
+}
+
+.cta-block{
+    padding: 32px 64px;
+    background-color: #010230;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 240px;
+    margin-top: 24px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    padding: 12px 16px;
 }
 
 ul{
@@ -79,15 +147,31 @@ h1{
     margin: 0px;
     font-weight: 600;
 }
-h2{
+h3{
     font-size: 16px;
     color: #FFFFFF;
     margin: 0px;
     font-weight: 400;
+}
+h2{
+    font-size: 32px;
+    color: #FFFFFF;
+    font-weight: 600; 
+}
+p{
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: 400; 
 }
 button{
     padding: 20px 40px;
     border-radius: 62px;
     border: none;
     font-size: 16px;
+}
+
+button:hover{
+    background-color: #D8D8D8;
+    transition: 200ms;
+    cursor: pointer;
 }
